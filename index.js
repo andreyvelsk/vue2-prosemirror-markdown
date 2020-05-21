@@ -431,10 +431,6 @@ exports.install = function (Vue, options) {
       }
     },
     watch: {
-      initialMarkdown (val) {
-        this.content.markdown = val
-        this.$emit('_content-change-markdown')
-      },
       content: {
         handler (val, oldVal) {
           this.$emit('contentChange', val, oldVal)
